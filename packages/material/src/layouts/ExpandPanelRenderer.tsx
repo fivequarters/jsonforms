@@ -22,13 +22,8 @@ import {
   JsonFormsUISchemaRegistryEntry,
   getFirstPrimitiveProp
 } from '@jsonforms/core';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import IconButton from '@material-ui/core/IconButton';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import { Grid } from '@material-ui/core';
+import { Avatar, ExpansionPanel, ExpansionPanelDetails, ExpansionPanelSummary, Grid, IconButton } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Avatar from '@material-ui/core/Avatar';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ArrowUpward from '@material-ui/icons/ArrowUpward';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';

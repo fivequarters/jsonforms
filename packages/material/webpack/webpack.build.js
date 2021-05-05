@@ -12,10 +12,10 @@ module.exports = merge(baseConfig, {
       '@jsonforms/react': 'JSONFormsReact',
       "react": "React",
       "redux": "Redux",
+      '@material-ui/core': 'MaterialUI',
       "react-redux": "ReactRedux"
     },
-    /@material-ui\/core\/.*/,
-    /@material-ui\/icons\/.*/,
-    /@material-ui\/lab\/.*/,
+    // /@material-ui\/icons\/.*/,
+    // /@material-ui\/lab\/.*/,
   ],
 });

@@ -33,14 +33,14 @@ import {
   OwnPropsOfEnum
 } from '@jsonforms/core';
 import { Control } from '@jsonforms/react';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
 import {
   FormControl,
   FormControlLabel,
   FormHelperText,
   FormLabel,
-  Hidden
+  Hidden,
+  Radio,
+  RadioGroup
 } from '@material-ui/core';
 
 export class MaterialRadioGroup extends Control<

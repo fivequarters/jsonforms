@@ -36,6 +36,7 @@ import {
   FormHelperText,
   Grid,
   Hidden,
+  IconButton,
   Table,
   TableBody,
   TableCell,
@@ -54,7 +55,6 @@ import {
   JsonFormsRendererRegistryEntry,
   JsonFormsCellRendererRegistryEntry
 } from '@jsonforms/core';
-import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import ArrowUpward from '@material-ui/icons/ArrowUpward';

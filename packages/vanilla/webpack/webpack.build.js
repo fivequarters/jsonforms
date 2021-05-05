@@ -7,6 +7,7 @@ module.exports = merge(baseConfig, {
         library: "JSONFormsVanilla"
       },
       externals: {
+          react: 'React',
           '@jsonforms/core': 'JSONFormsCore'
     },
 });

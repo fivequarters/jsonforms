@@ -26,13 +26,15 @@ import React from 'react';
 
 import Badge from '@material-ui/core/Badge';
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
-import Tooltip from '@material-ui/core/Tooltip';
+import { Tooltip } from '@material-ui/core';
+import {
+  createStyles,
+  withStyles,
+} from '@material-ui/core';
 import {
   StyledComponentProps,
-  withStyles,
+  Theme,
   WithStyles,
-  createStyles,
-  Theme
 } from '@material-ui/core/styles';
 
 export { StyledComponentProps };
