@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.fusebit.io/fusebit/js/fusebit-form/latest/react.production.min.js"></script>
+    <script src="https://cdn.fusebit.io/fusebit/js/fusebit-form/latest/react-dom.production.min.js"></script>
+    <script src="https://cdn.fusebit.io/fusebit/js/fusebit-form/latest/material-ui.production.min.js"></script>
+    <script>
+      MaterialUI.default = MaterialUI;
+    </script>
+    <script src="https://cdn.fusebit.io/fusebit/js/fusebit-form/latest/jsonforms-core.js"></script>
+    <script src="https://cdn.fusebit.io/fusebit/js/fusebit-form/latest/jsonforms-react.js"></script>
+    <script src="https://cdn.fusebit.io/fusebit/js/fusebit-form/latest/jsonforms-material.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" crossorigin>
+      const { createMuiTheme, ThemeProvider } = MaterialUI;
+
+      function App() {
+        const renderers = JSONFormsMaterial.materialRenderers;
+        const cells = JSONFormsMaterial.materialCells;
+
+        const schema = {
+          type: 'object',
+          properties: {
+            name: { label: 'schemalabel', type: 'string', minLength: 3 }
+          }
+        };
+        const uischema = {
+          type: 'VerticalLayout',
+          elements: [
+            {
+              type: 'Control',
+              label: 'uischemalabel',
+              scope: '#/properties/name'
+            }
+          ]
+        };
+        const data = { name: 'John Doe' };
+
+        const id = 'foobar2';
+        return (
+          <div>
+            <JSONFormsReact.JsonForms
+              renderers={renderers}
+              cells={cells}
+              schema={schema}
+              uischema={uischema}
+              data={data}
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <ThemeProvider theme={createMuiTheme({})}>
+          <App />
+        </ThemeProvider>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>

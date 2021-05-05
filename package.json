@@ -8,6 +8,8 @@
     "init": "lerna bootstrap --hoist",
     "build": "lerna run build && lerna run doc",
     "bundle": "lerna run bundle",
+    "build.fusebit": "./build-fusebit.sh",
+    "deploy.fusebit": "./deploy-fusebit.sh",
     "clean": "lerna run clean",
     "test": "lerna run test",
     "test-cov": "lerna run test-cov",
